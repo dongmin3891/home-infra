@@ -7,10 +7,16 @@ spec:
   clusterIP: None
   selector:
     app: postgres
+  type: ClusterIP
+  sessionAffinity: None
+  internalTrafficPolicy: Cluster
+  ipFamilyPolicy: SingleStack
+  ipFamilies:
+    - IPv4
   ports:
     - name: postgres
       port: 5432
-      targetPort: postgres
+      targetPort: 5432
       protocol: TCP
 ---
 apiVersion: apps/v1
