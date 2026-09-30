@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/dongmin3891/home-infra.git
     targetRevision: main
-    path: database
+    path: k8s/database
   destination:
     server: https://kubernetes.default.svc
     namespace: database
