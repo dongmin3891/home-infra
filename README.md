@@ -2,6 +2,19 @@
 
 GitOps manifests for the home-server K3s cluster.
 
+## Repository layout
+
+```text
+home-infra/
+├─ k8s/
+│  └─ database/
+│     ├─ namespace.yaml
+│     ├─ postgres.yaml
+│     └─ postgres-r2-backup.yaml
+└─ argocd/
+   └─ database-application.yaml
+```
+
 ## Managed infrastructure
 
 - `database` namespace
